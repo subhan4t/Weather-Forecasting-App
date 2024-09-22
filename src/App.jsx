@@ -8,6 +8,7 @@ import getFormattedWeatherData from './services/weatherService';
 
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Footer from './components/Footer';
 
 function captilizeFirstLetter(string) {
   return string.charAt(0).toUpperCase() + string.slice(1);
@@ -61,8 +62,11 @@ const App = () => {
       )}
 
       <ToastContainer autoClose={2500} hideProgressBar={true} theme="colored" />
+      
       </div>
+      <Footer/>
     </div>
+    
   )
 }
 
